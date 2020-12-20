@@ -1,0 +1,6 @@
+Once again the developers left the same vulnerability as the past few assessments, where a hacker can access/use 
+a gifr card belonging to someone else.  In the past assignments this has been due to a lack of authentication checking
+in the use gift card section and the same applies here.  All the hacker has to do to use someone elses giftcard is to change
+the id field which is directly used in the url path.  To fix this, add additional verification when retrieving the user id.
+This can be done using information from the token, when the token is verified, use the user information associated with it like the
+user name to grab the id and use that as the id for the url.
