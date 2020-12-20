@@ -1,0 +1,17 @@
+What are the two types of Intents?
+Explicit and Implicit Intents
+
+Which of the two types of Intents are more secure?
+Explicit Intents, because implicit intents do not verify what service will respond to the intent or even where the service orignates.
+Explicit intents do verify the trustworthiness of the source of the intent.
+
+What type of Intent is shown on lines 69 to 73 of SecondFragment.kt?
+var intent = Intent(Intent.ACTION_VIEW) is an example of an implicit intent.
+
+What type of Intent is shown on lines 68 to 70 of ThirdFragment.kt?
+var intent = Intent(activity, ProductScrollingActivity::class.java) is an example of an explicit intent as it refernces the Java librarys
+fully qualified component class name.
+
+Which of these two Intents is the proper way to do an Intent?
+The thirdfragment.kt is the correct intent as it properly references the JAVA class for ProductScrolling explicit which increases the application security.  Both the
+two intents intend to do the same functionality, thus I replaced the intent in SecondFragment.kt with ThirdFragment.kt.  
